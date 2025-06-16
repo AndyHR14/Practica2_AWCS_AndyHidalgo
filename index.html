@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Préstamos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js"> </script>
+
+</head>
+<body>
+    <h1> Calculadora</h1>
+    <p> Calcula tu cuota mensual</p>
+
+    <form id="formulario">
+        <ul>
+            <li>
+                <label for="Monto">Ingrese el monto del prestamo: </label>
+                <input type="text" id="monto" name="monto">
+            </li>
+            <li>
+                <label for="Cuotas">Ingrese el numero de cuotas: </label>
+                <input type="text" id="cuotas" name="cuotas">
+            </li>
+            <li>
+                <label for="InteresAn">Ingrese la tasa de interes anual: </label>
+                <input type="text" id="interesAn" name="interesAn">
+            </li>
+
+            <li class="button">
+                <button type="submit">Realizar calculo</button>
+                 <button type="reset" onclick="limpiar()">Limpiar</button>
+            </li>
+            </ul>            
+    </form>
+
+   <div id="resultado">
+        <h2>Resultados:</h2>
+        <p>Cuota Mensual: <span id="cuotaMen">0</span></p>
+        <p>Interes Mensual: <span id="interesMen">0</span></p>
+        <p>Total a Pagar: <span id="totalAPagar">0</span></p>
+        <p>Total a Pagar sin Intereses: <span id="totalAPagarSinInteres">0</span></p>
+        <p>Tiempo total de Prestamo: <span id="totalPrestamo">0</span></p>
+    </div>
+
+    <div>
+        <button onclick="cambiarColorPag()"> Cambiar el color de la pagina </button>
+        <button onclick="cambiarColorPag1()"> Color original de la pagina</button>
+    </div>
+    </div>
+</body>
+</html>
